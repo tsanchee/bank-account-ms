@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "59389190-971c-484e-bfc8-a7836aff64e4",
+		"name": "bank-account-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account-APIs",
+			"item": [
+				{
+					"name": "AccountList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8030/api/v1/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8030",
+							"path": [
+								"api",
+								"v1",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AccountAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"personId\": \"61779b0a50901e5057479a59\",\r\n        \"accountType\": \"CUENTA_CORRIENTE\",\r\n        \"accountNumber\": \"9005823699990554785\",\r\n        \"currency\": \"PEN\",\r\n        \"initialSAmount\": 0.0,\r\n        \"currentAmount\": 3333.0,\r\n        \"maxMonthtransactions\": 10,\r\n        \"currentTransactions\": 0,\r\n        \"transactionDay\": null,\r\n        \"maxMonthCredit\": 0.0,\r\n        \"commission\": 0.0,\r\n        \"limited\": true,\r\n        \"active\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8030/api/v1/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8030",
+							"path": [
+								"api",
+								"v1",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AccountUpd",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"61763f87f78f2c109804a44f\",\r\n        \"personId\": \"617631c1c45a345f2c14fc8e\",\r\n        \"accountType\": \"Corriente\",\r\n        \"accountNumber\": \"15478236592102154785\",\r\n        \"currency\": \"PEN\",\r\n        \"initialSAmount\": 0.0,\r\n        \"currentAmount\": 2000.0,\r\n        \"active\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8030/api/v1/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8030",
+							"path": [
+								"api",
+								"v1",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AccountDel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8030/api/v1/accounts/61764019f78f2c109804a450",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8030",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"61764019f78f2c109804a450"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AccountSearchByPersonId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8030/api/v1/accounts/617631c1c45a345f2c14fc8e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8030",
+							"path": [
+								"api",
+								"v1",
+								"accounts",
+								"617631c1c45a345f2c14fc8e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
